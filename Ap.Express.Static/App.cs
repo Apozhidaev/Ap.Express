@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
 
-namespace SelfHostExpress.Static
+namespace Ap.Express.Static
 {
     public class App
     {

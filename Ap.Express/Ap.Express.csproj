@@ -7,8 +7,8 @@
     <ProjectGuid>{F2579D7A-CB0C-4D13-ABA9-CCDD86ABEEA8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SelfHostExpress</RootNamespace>
-    <AssemblyName>SelfHostExpress</AssemblyName>
+    <RootNamespace>Ap.Express</RootNamespace>
+    <AssemblyName>Ap.Express</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

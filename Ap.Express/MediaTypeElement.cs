@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace SelfHostExpress
+namespace Ap.Express
 {
     public class MediaTypeElement : ConfigurationElement
     {

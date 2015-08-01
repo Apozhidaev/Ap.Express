@@ -7,8 +7,8 @@
     <ProjectGuid>{CB749A67-37AD-4FC2-A2E9-3AD53F4D8BB4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SelfHostExpress.Static</RootNamespace>
-    <AssemblyName>SelfHostExpress.Static</AssemblyName>
+    <RootNamespace>Ap.Express.Static</RootNamespace>
+    <AssemblyName>Ap.Express.Static</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -81,9 +81,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\SelfHostExpress\SelfHostExpress.csproj">
+    <ProjectReference Include="..\Ap.Express\Ap.Express.csproj">
       <Project>{f2579d7a-cb0c-4d13-aba9-ccdd86abeea8}</Project>
-      <Name>SelfHostExpress</Name>
+      <Name>Ap.Express</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

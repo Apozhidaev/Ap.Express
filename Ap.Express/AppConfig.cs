@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Configuration;
 
-namespace SelfHostExpress
+namespace Ap.Express
 {
     internal static class AppConfig
     {

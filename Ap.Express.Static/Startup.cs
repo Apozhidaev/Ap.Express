@@ -1,7 +1,7 @@
 using System.Web.Http;
 using Owin;
 
-namespace SelfHostExpress.Static
+namespace Ap.Express.Static
 {
     public class Startup
     {

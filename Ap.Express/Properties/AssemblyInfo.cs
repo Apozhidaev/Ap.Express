@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("SelfHostExpress")]
+[assembly: AssemblyTitle("Ap.Express")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("DALE")]
-[assembly: AssemblyProduct("SelfHostExpress")]
-[assembly: AssemblyCopyright("Copyright © DALE 2015")]
+[assembly: AssemblyCompany("alexanderpo.com")]
+[assembly: AssemblyProduct("Ap.Tools")]
+[assembly: AssemblyCopyright("Copyright © alexanderpo.com 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

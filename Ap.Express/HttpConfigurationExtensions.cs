@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace SelfHostExpress
+namespace Ap.Express
 {
     public static class HttpConfigurationExtensions
     {

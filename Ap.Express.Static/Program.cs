@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace SelfHostExpress.Static
+namespace Ap.Express.Static
 {
     class Program
     {

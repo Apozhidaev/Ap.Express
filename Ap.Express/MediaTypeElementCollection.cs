@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace SelfHostExpress
+namespace Ap.Express
 {
     [ConfigurationCollection(typeof(MediaTypeElement), AddItemName = "mediaType",
         CollectionType = ConfigurationElementCollectionType.BasicMap)]
