@@ -5,7 +5,7 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ap.Express", "Ap.Express\Ap.Express.csproj", "{F2579D7A-CB0C-4D13-ABA9-CCDD86ABEEA8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ap.Express.Static", "Ap.Express.Static\Ap.Express.Static.csproj", "{CB749A67-37AD-4FC2-A2E9-3AD53F4D8BB4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ap.Express.Host", "Ap.Express.Host\Ap.Express.Host.csproj", "{CB749A67-37AD-4FC2-A2E9-3AD53F4D8BB4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

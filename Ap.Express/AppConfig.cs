@@ -10,15 +10,12 @@ namespace Ap.Express
 
         static AppConfig()
         {
-
-            var content = (ContentSection)ConfigurationManager.GetSection("selfHostExpress");
+            var content = (ContentSection)ConfigurationManager.GetSection("apExpress");
             _defaultMediaType = content.DefaultMediaType;
             foreach (MediaTypeElement mediaType in content.MediaTypes)
             {
                 _mediaTypes.Add(mediaType.Extension, mediaType.Value);
             }
-
-
         }
 
         public static string GetMediaType(string extension)

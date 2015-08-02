@@ -1,7 +1,8 @@
 ﻿using System;
 using Microsoft.Owin.Hosting;
+using Ap.Express.Host.Configuration;
 
-namespace Ap.Express.Static
+namespace Ap.Express.Host
 {
     public class App
     {
@@ -10,7 +11,12 @@ namespace Ap.Express.Static
         public void Start()
         {
 
-            _webApp = WebApp.Start<Startup>("http://localhost:3838/");
+            var startOptions = new StartOptions();
+            foreach (var url in AppConfig.Urls)
+            {
+                startOptions.Urls.Add(url);
+            }
+            _webApp = WebApp.Start<Startup>(startOptions);
         }
 
         public void Stop()
