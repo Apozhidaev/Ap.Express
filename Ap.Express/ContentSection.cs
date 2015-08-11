@@ -30,5 +30,14 @@ namespace Ap.Express
                 return (string)this["defaultMediaType"];
             }
         }
+
+        [ConfigurationProperty("defaultUrl", IsRequired = false)]
+        public string DefaultUrl
+        {
+            get
+            {
+                return (string)this["defaultUrl"];
+            }
+        }
     }
 }
