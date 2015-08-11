@@ -12,7 +12,7 @@ namespace Ap.Express.Host
         {
 
             var startOptions = new StartOptions();
-            foreach (var url in AppConfig.Urls)
+            foreach (var url in AppSettings.Urls)
             {
                 startOptions.Urls.Add(url);
             }

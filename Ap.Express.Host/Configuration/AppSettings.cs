@@ -3,12 +3,12 @@ using System.Configuration;
 
 namespace Ap.Express.Host.Configuration
 {
-    public static class AppConfig
+    public static class AppSettings
     {
         private static readonly string[] _urls;
         private static readonly NetworkSection _network;
 
-        static AppConfig()
+        static AppSettings()
         {
             _network = (NetworkSection)ConfigurationManager.GetSection("network");
             _urls = _network.Url.Split(new[] { ',', ';' }, StringSplitOptions.RemoveEmptyEntries);

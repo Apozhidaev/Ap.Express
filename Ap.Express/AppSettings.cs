@@ -3,13 +3,14 @@ using System.Configuration;
 
 namespace Ap.Express
 {
-    internal static class AppConfig
+    internal static class AppSettings
     {
+        private static string _root;
         private static readonly string _defaultUrl;
         private static readonly string _defaultMediaType;
         private static readonly Dictionary<string, string> _mediaTypes = new Dictionary<string, string>();
 
-        static AppConfig()
+        static AppSettings()
         {
             var content = (ContentSection)ConfigurationManager.GetSection("apExpress");
             _defaultUrl = content.DefaultUrl;
@@ -18,6 +19,11 @@ namespace Ap.Express
             {
                 _mediaTypes.Add(mediaType.Extension, mediaType.Value);
             }
+        }
+
+        public static void UseStatic(string root)
+        {
+            _root = root;
         }
 
         public static string DefaultUrl
@@ -34,6 +40,9 @@ namespace Ap.Express
             return _defaultMediaType;
         }
 
-        public static string Root { get; set; }
+        public static string Root
+        {
+            get { return _root; }
+        }
     }
 }

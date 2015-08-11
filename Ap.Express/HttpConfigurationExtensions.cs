@@ -6,12 +6,12 @@ namespace Ap.Express
     {
         public static void UseStatic(this HttpConfiguration configuration, string root)
         {
-            AppConfig.Root = root;
+            AppSettings.UseStatic(root);
 
             configuration.Routes.MapHttpRoute(
-               name: "__StaticContent",
+               name: "__Content",
                routeTemplate: "{*url}",
-               defaults: new { controller = "__StaticContent", action = "Get" }
+               defaults: new { controller = "__Content", action = "Get" }
            );
         }
     }

@@ -18,9 +18,9 @@ namespace Ap.Express.Host
                 });
                 x.RunAsLocalSystem();
 
-                x.SetDescription(AppConfig.Description);
-                x.SetDisplayName(AppConfig.DisplayName);
-                x.SetServiceName(AppConfig.ServiceName);
+                x.SetDescription(AppSettings.Description);
+                x.SetDisplayName(AppSettings.DisplayName);
+                x.SetServiceName(AppSettings.ServiceName);
             });
         }
     }
