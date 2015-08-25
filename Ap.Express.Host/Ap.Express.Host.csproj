@@ -76,7 +76,7 @@
   <ItemGroup>
     <Compile Include="App.cs" />
     <Compile Include="Configuration\AppSettings.cs" />
-    <Compile Include="Configuration\NetworkSection.cs" />
+    <Compile Include="Configuration\GlobalSection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -92,6 +92,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="wwwroot\index.ru.html" />
     <Content Include="wwwroot\index.html" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

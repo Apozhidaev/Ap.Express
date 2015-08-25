@@ -10,13 +10,20 @@ namespace Ap.Express
 {
     public class __ContentController : ApiController
     {
+        private static ContentOptions _options;
+
+        public static void Use(ContentOptions options)
+        {
+            _options = options;
+        }
+
         [HttpGet]
         public HttpResponseMessage Get(Uri url)
         {
-            var path = Path.Combine(AppSettings.Root, url != null ? url.OriginalString : AppSettings.DefaultUrl);
-            if (File.Exists(path))
+            var path = Path.Combine(_options.Root, url != null ? url.OriginalString : _options.DefaultUrl);
+            if (TryFindContent(ref path))
             {
-                var mediaType = AppSettings.GetMediaType(Path.GetExtension(path));
+                var mediaType = _options.GetMediaType(Path.GetExtension(path));
                 if (!String.IsNullOrEmpty(mediaType))
                 {
                     var data = File.ReadAllBytes(path);
@@ -33,6 +40,25 @@ namespace Ap.Express
                 }
             }
             return Request.CreateResponse(HttpStatusCode.NotFound);
+        }
+
+        private bool TryFindContent(ref string path)
+        {
+            if (!String.IsNullOrEmpty(_options.DefaultCulture))
+            {
+                foreach (var headerValue in Request.Headers.AcceptLanguage)
+                {
+                    var culture = headerValue.Value;
+                    if (_options.DefaultCulture == culture) break;
+                    var culturePath = Path.ChangeExtension(path, String.Concat(culture, Path.GetExtension(path)));
+                    if (File.Exists(culturePath))
+                    {
+                        path = culturePath;
+                        return true;
+                    }
+                }
+            }
+            return File.Exists(path);
         }
     }
 }

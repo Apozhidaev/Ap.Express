@@ -4,9 +4,9 @@ namespace Ap.Express
 {
     public static class HttpConfigurationExtensions
     {
-        public static void UseStatic(this HttpConfiguration configuration, string root)
+        public static void UseStatic(this HttpConfiguration configuration, ContentOptions options)
         {
-            AppSettings.UseStatic(root);
+            __ContentController.Use(options);
 
             configuration.Routes.MapHttpRoute(
                name: "__Content",

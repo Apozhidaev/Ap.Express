@@ -68,12 +68,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AppSettings.cs" />
-    <Compile Include="ContentSection.cs" />
+    <Compile Include="ContentOptions.cs" />
     <Compile Include="ContentHelper.cs" />
     <Compile Include="HttpConfigurationExtensions.cs" />
-    <Compile Include="MediaTypeElement.cs" />
-    <Compile Include="MediaTypeElementCollection.cs" />
     <Compile Include="__ContentController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

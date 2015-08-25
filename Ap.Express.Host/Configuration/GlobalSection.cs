@@ -2,7 +2,7 @@
 
 namespace Ap.Express.Host.Configuration
 {
-    public class NetworkSection : ConfigurationSection
+    public class GlobalSection : ConfigurationSection
     {
         [ConfigurationProperty("url", IsRequired = true)]
         public string Url

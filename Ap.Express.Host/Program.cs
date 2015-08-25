@@ -1,6 +1,5 @@
-﻿using System;
+﻿using Ap.Express.Host.Configuration;
 using Topshelf;
-using Ap.Express.Host.Configuration;
 
 namespace Ap.Express.Host
 {
