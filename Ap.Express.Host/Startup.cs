@@ -9,7 +9,7 @@ namespace Ap.Express.Host
         public void Configuration(IAppBuilder appBuilder)
         {
             var config = new HttpConfiguration();
-            config.UseStatic(ContentOptions.Web(AppSettings.Root));
+            config.UseStatic(new ContentOptions(AppSettings.Root).UseWeb().UseCulture());
             appBuilder.UseWebApi(config);
         }
 

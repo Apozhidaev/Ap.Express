@@ -70,6 +70,7 @@
   <ItemGroup>
     <Compile Include="ContentOptions.cs" />
     <Compile Include="ContentHelper.cs" />
+    <Compile Include="ContentOptionsExtensions.cs" />
     <Compile Include="HttpConfigurationExtensions.cs" />
     <Compile Include="__ContentController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

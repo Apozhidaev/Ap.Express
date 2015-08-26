@@ -44,7 +44,8 @@ namespace Ap.Express
 
         private bool TryFindContent(ref string path)
         {
-            if (!String.IsNullOrEmpty(_options.DefaultCulture))
+            if (!String.IsNullOrEmpty(_options.DefaultCulture) 
+                && (_options.CultureResources.Count == 0 || _options.CultureResources.Contains(Path.GetFileName(path))))
             {
                 foreach (var headerValue in Request.Headers.AcceptLanguage)
                 {
