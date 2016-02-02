@@ -20,7 +20,7 @@ namespace Ap.Express
         [HttpGet]
         public HttpResponseMessage Get(Uri url)
         {
-            var path = Path.Combine(_options.Root, url != null ? url.OriginalString : _options.DefaultUrl);
+            var path = Path.Combine(_options.Root, url?.OriginalString ?? _options.DefaultUrl);
             if (TryFindContent(ref path))
             {
                 var mediaType = _options.GetMediaType(Path.GetExtension(path));
