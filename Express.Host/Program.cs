@@ -1,7 +1,7 @@
-﻿using Ap.Express.Host.Configuration;
+﻿using Express.Tests.Configuration;
 using Topshelf;
 
-namespace Ap.Express.Host
+namespace Express.Tests
 {
     class Program
     {

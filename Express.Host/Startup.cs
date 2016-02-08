@@ -1,8 +1,8 @@
 using System.Web.Http;
-using Ap.Express.Host.Configuration;
+using Express.Tests.Configuration;
 using Owin;
 
-namespace Ap.Express.Host
+namespace Express.Tests
 {
     public class Startup
     {

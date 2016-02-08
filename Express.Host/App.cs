@@ -1,8 +1,8 @@
 ﻿using System;
+using Express.Tests.Configuration;
 using Microsoft.Owin.Hosting;
-using Ap.Express.Host.Configuration;
 
-namespace Ap.Express.Host
+namespace Express.Tests
 {
     public class App
     {

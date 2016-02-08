@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Configuration;
 
-namespace Ap.Express.Host.Configuration
+namespace Express.Tests.Configuration
 {
     public static class AppSettings
     {

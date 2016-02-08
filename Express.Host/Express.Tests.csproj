@@ -7,8 +7,8 @@
     <ProjectGuid>{CB749A67-37AD-4FC2-A2E9-3AD53F4D8BB4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Ap.Express.Host</RootNamespace>
-    <AssemblyName>Ap.Express.Host</AssemblyName>
+    <RootNamespace>Express.Tests</RootNamespace>
+    <AssemblyName>Express.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -86,9 +86,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Ap.Express\Ap.Express.csproj">
+    <ProjectReference Include="..\Express\Express.csproj">
       <Project>{f2579d7a-cb0c-4d13-aba9-ccdd86abeea8}</Project>
-      <Name>Ap.Express</Name>
+      <Name>Express</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

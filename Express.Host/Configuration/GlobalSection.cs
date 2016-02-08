@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace Ap.Express.Host.Configuration
+namespace Express.Tests.Configuration
 {
     public class GlobalSection : ConfigurationSection
     {
